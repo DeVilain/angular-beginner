@@ -15,6 +15,8 @@ export class DataBindingComponent implements OnInit {
 
   public gender: number = 1;
 
+  public directiveData: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
