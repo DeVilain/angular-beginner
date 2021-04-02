@@ -1,0 +1,18 @@
+<!-- ONE WAY BINDING -->
+<h1>{{ title }}</h1>
+
+<!-- TWO WAY BINDING -->
+<form action="">
+  <label>Họ tên: {{ name }}</label>
+  <br />
+  <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" />
+  <br />
+  <label>Tuổi: {{ age == 0 ? '' : age }}</label>
+  <br />
+  <input type="text" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" />
+  <p>{{ gender == 1 ? "Nam" : "Nữ" }}</p>
+  <select [(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+    <option value="1">Nam</option>
+    <option value="0">Nữ</option>
+  </select>
+</form>
